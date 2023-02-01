@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="Plugin.dll" Id="00000000-0000-0000-0000-000000000000" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <clear />
+        <Plugin Description="Plug-in to Update of account" FriendlyName="Update of account" Name="Plugin.PreValidationaccountUpdate" Id="00000000-0000-0000-0000-000000000000" TypeName="Plugin.PreValidationaccountUpdate">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="false" Name="Update of account" Description="Update of account" Id="00000000-0000-0000-0000-000000000000" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="Update" Mode="Synchronous" PrimaryEntityName="account" Rank="1" Stage="PreOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+  <DataProviders />
+</Register>
